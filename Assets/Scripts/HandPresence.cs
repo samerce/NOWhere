@@ -32,6 +32,8 @@ public class HandPresence : SerializedMonoBehaviour {
     private IEnumerator TryInitialize(float delayTime) {
         yield return new WaitForSeconds(delayTime);
 
+        if(spawnedController != null && spawnedHandModel != null) yield break;
+
         // InputDeviceCharacteristics rightControllerCharacteristics = InputDeviceCharacteristics.Right | InputDeviceCharacteristics.Controller;
         InputDevices.GetDevicesWithCharacteristics(controllerCharacteristics, devices);
 
@@ -50,11 +52,10 @@ public class HandPresence : SerializedMonoBehaviour {
             } else {
                 Debug.LogError("Did not find a corresponding controller model.");
                 spawnedController = Instantiate(controllerPrefabs[0], transform);
-
             }
 
             spawnedHandModel = Instantiate(handModelPrefab, transform);
-            handAnimator = spawnedController.GetComponent<Animator>();
+            handAnimator = spawnedHandModel.GetComponent<Animator>();
         } 
     }
 
@@ -84,8 +85,8 @@ public class HandPresence : SerializedMonoBehaviour {
             spawnedHandModel.SetActive(false);
             spawnedController.SetActive(true);
             } else {
-                spawnedController.SetActive(true);
-                spawnedHandModel.SetActive(false);
+                spawnedController.SetActive(false);
+                spawnedHandModel.SetActive(true);
                 UpdateHandAnimation();
             }
         }
