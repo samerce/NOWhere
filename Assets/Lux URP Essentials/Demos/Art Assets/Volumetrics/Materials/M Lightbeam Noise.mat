@@ -38,7 +38,7 @@ Material:
     - _CameraNearFadeDistance: 0.83
     - _ConeWidth: 6
     - _Cull: 2
-    - _DetailStrength: 0.13
+    - _DetailStrength: 0.815
     - _DistanceAtten: 5
     - _DistanceFade: 9.81
     - _InvFade: 2.15

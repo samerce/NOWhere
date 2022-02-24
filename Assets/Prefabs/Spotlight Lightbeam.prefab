@@ -257,7 +257,7 @@ PrefabInstance:
     - target: {fileID: -1504981713932161579, guid: 7009db1f7ca864c6cba6e5b169416c4d, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2100000, guid: fa2c1854c4418471690b1f1d7842d960, type: 2}
     - target: {fileID: -927199367670048503, guid: 7009db1f7ca864c6cba6e5b169416c4d, type: 3}
       propertyPath: m_Name
       value: LightBeam
