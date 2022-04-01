@@ -38,7 +38,7 @@ Material:
     - _CameraNearFadeDistance: 0.83
     - _ConeWidth: 6
     - _Cull: 2
-    - _DetailStrength: 0.815
+    - _DetailStrength: 0.976
     - _DistanceAtten: 5
     - _DistanceFade: 9.81
     - _InvFade: 2.15
@@ -51,10 +51,10 @@ Material:
     - _StencilRef: 0
     - _ZTest: 4
     - _far: 0.5
-    - _near: 0
+    - _near: 2.78
     m_Colors:
     - _CameraFadeDistances: {r: 1, g: 0.5, b: 1, a: 3}
-    - _Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+    - _Color: {r: 0.8117647, g: 0.5195294, b: 0.65464896, a: 0.8666667}
     - _DetailScrollSpeed: {r: 0, g: 1, b: 1, a: 0.3}
     - _SceneFadeDistances: {r: 0.36, g: 2.7027028, b: 0.36, a: 0.73}
   m_BuildTextureStacks: []
