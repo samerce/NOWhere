@@ -25,4 +25,4 @@ MonoBehaviour:
   SubsampledLayout: 0
   TargetQuest: 1
   TargetQuest2: 1
-  SystemSplashScreen: {fileID: 0}
+  SystemSplashScreen: {fileID: 2800000, guid: 1c9ab7ffa832d1a42af80b56d81a0207, type: 3}
